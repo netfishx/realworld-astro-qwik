@@ -7,11 +7,25 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "astro": "^4.6.3",
     "@astrojs/check": "^0.5.10",
+    "@builder.io/qwik": "^1.5.2",
+    "@qwikdev/astro": "^0.5.14",
+    "astro": "^4.6.3",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.15.0",
+    "@unocss/eslint-plugin": "^0.59.4",
+    "@unocss/reset": "^0.59.4",
+    "eslint": "^9.1.0",
+    "eslint-plugin-astro": "^0.34.0",
+    "eslint-plugin-format": "^0.1.1",
+    "prettier-plugin-astro": "^0.13.0",
+    "unocss": "^0.59.4"
   }
 }
