@@ -1,14 +1,12 @@
-import { defineConfig } from 'astro/config';
-import UnoCSS from 'unocss/astro';
-import qwikdev from '@qwikdev/astro';
+import { defineConfig } from 'astro/config'
+import UnoCSS from 'unocss/astro'
+import qwikdev from '@qwikdev/astro'
+import vercel from '@astrojs/vercel/serverless'
 
-import vercel from "@astrojs/vercel/serverless";
-
-// https://astro.build/config
 export default defineConfig({
   integrations: [UnoCSS({
-    injectReset: true
+    injectReset: true,
   }), qwikdev()],
-  output: "server",
-  adapter: vercel()
-});
+  output: 'server',
+  adapter: vercel(),
+})
