@@ -26,6 +26,7 @@
     "eslint": "^9.1.0",
     "eslint-plugin-astro": "^0.34.0",
     "eslint-plugin-format": "^0.1.1",
+    "lightningcss": "^1.24.1",
     "prettier-plugin-astro": "^0.13.0",
     "unocss": "^0.59.4"
   }

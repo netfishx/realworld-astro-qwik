@@ -9,4 +9,12 @@ export default defineConfig({
   }), qwikdev()],
   output: 'server',
   adapter: vercel(),
+  vite: {
+    css: {
+      transformer: 'lightningcss',
+    },
+    build: {
+      cssMinify: 'lightningcss',
+    },
+  },
 })
