@@ -17,6 +17,7 @@ export default defineConfig({
         titillium: [
           {
             name: 'Titillium Web',
+            weights: [700],
           },
           {
             name: 'sans-serif',
