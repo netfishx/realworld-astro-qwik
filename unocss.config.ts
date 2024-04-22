@@ -28,16 +28,14 @@ export default defineConfig({
     }),
   ],
   theme: {
-    extends: {
-      container: {
-        padding: {
-          'DEFAULT': '1rem',
-          'sm': '1rem',
-          'md': '2rem',
-          'lg': '3rem',
-          'xl': '4rem',
-          '2xl': '14rem',
-        },
+    container: {
+      padding: {
+        'DEFAULT': '1rem',
+        'sm': '1rem',
+        'md': '2rem',
+        'lg': '3rem',
+        'xl': '4rem',
+        '2xl': '14rem',
       },
     },
   },
