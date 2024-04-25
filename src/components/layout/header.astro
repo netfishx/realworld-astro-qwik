@@ -4,7 +4,7 @@
   <div class="container flex flex-wrap justify-between items-center mx-auto">
     <a class="flex items-center" href="/">
       <span
-        class="self-center text-[#5cb85c] text-2xl font-titillium whitespace-nowrap"
+        class="self-center text-primary text-2xl font-titillium whitespace-nowrap"
         >conduit</span
       >
     </a>
@@ -14,19 +14,19 @@
       >
         <li>
           <a
-            class="block p-2 text-gray-400 border-b border-gray-100 md:border-0 md:p-0 hover:bg-gray-50 hover:text-gray-700 md:hover:bg-transparent cursor-default text-gray-900 hover:text-black"
+            class={`block p-2 text-gray-400 border-b border-gray-100 md:border-0 md:p-0 hover:bg-gray-50 hover:text-gray-700 md:hover:bg-transparent ${Astro.url.pathname === '/' && 'cursor-default text-gray-900 hover:text-black'}`}
             href="/">Home</a
           >
         </li>
         <li>
           <a
-            class="block p-2 text-gray-400 border-b border-gray-100 md:border-0 md:p-0 hover:bg-gray-50 hover:text-gray-700 md:hover:bg-transparent"
+            class={`block p-2 text-gray-400 border-b border-gray-100 md:border-0 md:p-0 hover:bg-gray-50 hover:text-gray-700 md:hover:bg-transparent ${Astro.url.pathname === '/login' && 'cursor-default text-gray-900 hover:text-black'}`}
             href="/login">Sign in</a
           >
         </li>
         <li>
           <a
-            class="block p-2 text-gray-400 border-b border-gray-100 md:border-0 md:p-0 hover:bg-gray-50 hover:text-gray-700 md:hover:bg-transparent"
+            class={`block p-2 text-gray-400 border-b border-gray-100 md:border-0 md:p-0 hover:bg-gray-50 hover:text-gray-700 md:hover:bg-transparent ${Astro.url.pathname === '/register' && 'cursor-default text-gray-900 hover:text-black'}`}
             href="/register">Sign up</a
           >
         </li>

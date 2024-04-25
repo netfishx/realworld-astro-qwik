@@ -28,6 +28,14 @@ export default defineConfig({
     }),
   ],
   theme: {
+    colors: {
+      'primary': '#5cb85c',
+      'primary-300': '#a3d7a3',
+      'primary-600': '#449d44',
+      'primary-700': '#419641',
+      'primary-800': '#398439',
+      'primary-900': '#2d672d',
+    },
     container: {
       padding: {
         'DEFAULT': '1rem',

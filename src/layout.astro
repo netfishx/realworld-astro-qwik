@@ -16,7 +16,9 @@ import Header from '@/components/layout/header.astro'
   </head>
   <body h="screen" text="[#373a3c]" flex="~ col">
     <Header />
-    <slot />
+    <div class="shrink-0 grow mt-14 md:mt-12">
+      <slot />
+    </div>
     <Footer />
   </body>
 </html>
